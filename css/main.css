@@ -1,29 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-/* font-family: 'Raleway', sans-serif; */
-
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Josefin+Sans:400,700|Nanum+Myeongjo|Raleway');
-/* font-family: 'Raleway', sans-serif;
-font-family: 'Nanum Myeongjo', serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Fjalla One', sans-serif; */
-
-
-/* body{
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  background: linear-gradient(to right, red, yellow);
-background: url(../img/bg_frontwave.png) repeat-x left 270px,url(../img/doc.png) no-repeat right 150px, url(../img/backwave.png) repeat-x left 232px,
-linear-gradient(to bottom, #edd7a6 100px,#d6c298 300px, #acdfe8 300px, #2989dB 14%, #5b738c 57%, #2d4754 85%);
-} */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:500|Open+Sans');
 body {
   background: url(../img/title.png) no-repeat center 15px,
               url(../img/before.png) no-repeat right 1500px,
               url(../img/after.png) no-repeat left 2700px,
-              url(../img/landbanner.png) no-repeat center 9710px,
               url(../img/landing.png) repeat-x left 9905px,
               url(../img/trees.png) repeat-x left 9810px,
               url(../img/mountain.png) no-repeat 200px 9620px,
               url(../img/cloudsbg.png) repeat,
+              url(../img/ufo.png) no-repeat 100px 6750px,
               url(../img/grain.png) repeat,
               linear-gradient(to bottom, rgba(94,191,255,1) 0%, rgba(250,247,205,0.86) 59%, rgba(205,232,250,0.77) 98%, rgba(205,232,250,0.77) 100%);
   /* background: #438bff; */
@@ -94,7 +79,7 @@ body {
 
 .plane{
   position: absolute;
-  top: 260px;
+  top: 400px;
   left:400px;
   animation: flycenter 7s, flying 2s infinite;
 }
@@ -213,12 +198,119 @@ body {
   background: url(../img/hotair.png);
   width: 275px;
   height: 719px;
-  top: 8200px;
+  top: 8000px;
   left: 120px;
 }
 
-.cloud2 {
+#diver3{
+  background: url(../img/diver3.png);
+  width: 150px;
+  height: 225px;
+  top: 8700px;
+  position: relative;
+  margin: auto;
+  /* animation: lastdiver 4s ease-in-out forwards; */
+}
+
+@keyframes lastdiver {
+  from{
+     transform: translateY(0px);
+   }
+  to{
+     transform: translateY(500px);
+}
+}
+
+.banner{
+  background: url(../img/bannerend.png);
+  width: 800px;
+  height: 310px;
+  top: 8500px;
+  position: relative;
+  margin: 0 auto;
+  z-index:1;
+}
+
+.about{
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  padding: 2px;
+  display: inline-block;
+  position: relative;
+  margin: 0 10px 0 10px;
+  top: -990px;
+  left: 530px;
+}
+
+a:link, a:visited {
+  color: #FC575E;
+  background-color: #FFF;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 4px 6px;
+  margin: 8px;
+  font-size: 1.8em;
+}
+a:hover {
+  color: #000;
+  background-color: #FC575E;
+  text-decoration: none;
+}
+#aboutstyles   {
+  background: url(../img/cloudsbg.png) repeat,
+              url(../img/grain.png) repeat,
+              linear-gradient(to bottom, rgba(94,191,255,1) 0%, rgba(250,247,205,0.86) 59%, rgba(205,232,250,0.77) 98%, rgba(205,232,250,0.77) 100%);
   position: absolute;
-  top: 3000px;
-  left: 600px;
+}
+#aboutstyles .abouttitle {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  position: relative;
+  top: 40px;
+  font-size: 3em;
+  text-align: center;
+  background: #FFF;
+  display: block;
+  color: #FC575E;
+
+}
+#aboutstyles h2, h3 {
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+#aboutstyles p{
+  line-height: 25px;
+}
+#aboutstyles .aboutbody {
+  font-family: 'Open Sans', sans-serif;
+  padding: 30px 50px 30px 50px;
+  background: #FFF;
+  border-radius: 5px;
+  margin: 0 150px 10px 150px;
+}
+
+#aboutstyles .abouthome{
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  padding: 2px;
+  display: inline-block;
+  margin: 0 auto;
+  width: 8em;
+  position: relative;
+  left:44%;
+
+}
+
+#aboutstyles a:link, #aboutstyles a:visited {
+  color: #FC575E;
+  background-color: #FFF;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 4px 6px;
+  margin: 8px;
+  font-size: 1.8em;
+}
+#aboutstyles a:hover {
+  color: #000;
+  background-color: #FC575E;
+  text-decoration: none;
 }
