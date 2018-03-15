@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* font-family: 'Raleway', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Josefin+Sans:400,700|Nanum+Myeongjo|Raleway');
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Fjalla One', sans-serif; */
+
+
+/* body{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  background: linear-gradient(to right, red, yellow);
+background: url(../img/bg_frontwave.png) repeat-x left 270px,url(../img/doc.png) no-repeat right 150px, url(../img/backwave.png) repeat-x left 232px,
+linear-gradient(to bottom, #edd7a6 100px,#d6c298 300px, #acdfe8 300px, #2989dB 14%, #5b738c 57%, #2d4754 85%);
+} */
+body {
+  background: url(../img/title.png) no-repeat center 15px,
+              url(../img/before.png) no-repeat right 1500px,
+              url(../img/after.png) no-repeat left 2700px,
+              url(../img/landbanner.png) no-repeat center 9710px,
+              url(../img/landing.png) repeat-x left 9905px,
+              url(../img/trees.png) repeat-x left 9810px,
+              url(../img/mountain.png) no-repeat 200px 9620px,
+              url(../img/cloudsbg.png) repeat,
+              url(../img/grain.png) repeat,
+              linear-gradient(to bottom, rgba(94,191,255,1) 0%, rgba(250,247,205,0.86) 59%, rgba(205,232,250,0.77) 98%, rgba(205,232,250,0.77) 100%);
+  /* background: #438bff; */
+}
+#counter {
+  /* border: 1px solid red; */
+  position: absolute;
+  top:300px;
+  left:524px;
+  margin: 0;
+  padding: 10px;
+  width: 130px;
+  height: 51px;
+  line-height: 100px;
+  text-align: center;
+  /* background-image: url(../img/diver1.png) no-repeat center; */
+
+}
+#chute {
+  /* border: 1px solid red; */
+  position: absolute;
+  top:100px;
+  left:450px;
+  margin: 0;
+  padding: 10px;
+  width: 280px;
+  height: 307px;
+  line-height: 100px;
+  text-align: center;
+  /* background-image: url(../img/diver1.png) no-repeat center; */
+
+}
+
+#stand{
+  /* border: 1px solid red; */
+  position: absolute;
+  top:100px;
+  left:525px;
+  margin: 0;
+  padding: 10px;
+  width: 130px;
+  height: 207px;
+  line-height: 100px;
+  text-align: center;
+  /* background-image: url(../img/diver1.png) no-repeat center; */
+
+}
+
+#canvas {
+  /* border: 1px solid blue; */
+  /* background-color: #438bff; */
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 10000px;
+  padding:0;
+  /* background: url(../img/landing.png) repeat-x left 9900px,url(../img/mountain.png) no-repeat 200px 9600px; */
+}
+
+/* .trees {
+  position: absolute;
+  z-index:1;
+  top: 9720px;
+  width: 100%;
+  height: 107px;
+  background: url(../img/trees.png) repeat-x left;
+} */
+
+.plane{
+  position: absolute;
+  top: 260px;
+  left:400px;
+  animation: flycenter 7s, flying 2s infinite;
+}
+
+@keyframes flycenter {
+  from {
+    left: 10px;
+  }
+  to {
+    left: 400px;
+  }
+}
+
+@keyframes flying {
+  0%{
+     transform: translateY(10px);
+   }
+   50% {
+     transform: translateY(20px);
+   }
+   100% {
+     transform: translateY(10px);
+   }
+}
+
+@keyframes flying2 {
+  0%{
+     transform: translateY(20px);
+   }
+   50% {
+     transform: translateY(10px);
+   }
+   100% {
+     transform: translateY(20px);
+   }
+}
+
+/* animation for parachute going down */
+@keyframes paradown {
+  0% {
+    transform:rotate(-2deg);
+  }
+  50% {
+    transform:rotate(5deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+.birds {
+  position: absolute;
+  top: 4000px;
+  left: 370px;
+  width: 450px;
+  height: 205px;
+  margin: 0 auto;
+  background: url('../img/birds.png') left center;
+  animation:  flying 2s infinite, birdsfloat .3s steps(3) infinite;
+  /* z-index: 1;
+  margin-top: -250px; */
+}
+
+@keyframes birdsfloat {
+ 100% { background-position: -1350px; }
+}
+
+
+.balloon1 {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 399px;
+  top: 3000px;
+  left: 200px;
+  animation: flying 2s infinite;
+}
+.balloon1, .balloon2, .balloon3, .hotballoon {
+  position: relative;
+  display: inline-block;
+  animation: flying 2s infinite;
+}
+
+.balloon2, .hotballoon {
+  position: relative;
+  display: inline-block;
+  animation: flying2 3s infinite;
+}
+
+
+.balloon1 {
+  background: url(../img/balloon1.png);
+  width: 249px;
+  height: 663px;
+  top: 5000px;
+  left: 15px;
+}
+
+.balloon2 {
+  background: url(../img/balloon2.png);
+  width: 249px;
+  height: 663px;
+  top: 6000px;
+  left: 700px;
+}
+
+.balloon3 {
+  background: url(../img/balloon3.png);
+  width: 249px;
+  height: 663px;
+  top: 7100px;
+  left: -500px;
+}
+
+.hotballoon {
+  background: url(../img/hotair.png);
+  width: 275px;
+  height: 719px;
+  top: 8200px;
+  left: 120px;
+}
+
+.cloud2 {
+  position: absolute;
+  top: 3000px;
+  left: 600px;
+}
