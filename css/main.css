@@ -20,8 +20,8 @@ body {
   left:524px;
   margin: 0;
   padding: 10px;
-  width: 130px;
-  height: 51px;
+  width: 280px;
+  height: 307px;
   line-height: 100px;
   text-align: center;
   /* background-image: url(../img/diver1.png) no-repeat center; */
@@ -221,6 +221,20 @@ body {
 }
 }
 
+.diverfirst {
+  background: url(../img/diver1.png);
+  position: absolute;
+  width: 150px;
+  height: 71px;
+  animation: paradown 2s infinite;
+}
+.diverchute {
+  background: url(../img/diver2.png);
+  width: 300px;
+  height: 328px;
+  animation: paradown 2s infinite;
+}
+
 .banner{
   background: url(../img/bannerend.png);
   width: 800px;
@@ -313,4 +327,18 @@ a:hover {
   color: #000;
   background-color: #FC575E;
   text-decoration: none;
+}
+
+.buttonstyle {
+  position: absolute;
+  padding: 5px;
+  font-size: 2em;
+  left: 535px;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+  top: 9550px;
+  background: #FFF;
+  color: #FC575E;
+  border-color: #FFF;
+
 }
